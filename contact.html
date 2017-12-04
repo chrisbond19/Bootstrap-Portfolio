@@ -1,85 +1,155 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="assets/css/reset.css" media="screen">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
-		<title>Contact</title>
-	</head>
-	<body>
+<html lang="en-us">
 
-		<!--HEADER-->
-		<div class="header">
-			<div class="container">
-				<!--Name/Logo-->
-					<h1 id="logo">Chris Hutchinson</h1>
-				<!--Navigation Bar-->
-				<nav id="bar">
-					<ul>
-						<!--About-->
-						<li><a href="index.html">About</a></li>
-						<div class="verticalLine"></div>
-						<!--Portfolio-->
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<div class="verticalLine"></div>
-						<!--Contact-->
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<!--END OF HEADER-->
+<head>
 
-		<!--MAIN CONTENT-->
-		<div class="container">
-			<!--Main-->
-			<section id="left">
-				<h2 id="big">Contact</h2>
-				<hr>
-				<br>
-					<form>
-						  Name<br>
-						  <input type="text" name="firstname" placeholder="Josh Smith" style="width: 100%; height: 20px;"><br>
-						  Email<br>
-						  <input type="text" name="lastname" placeholder="example@gmail.com" style="width: 100%">
-						  <br>
-						  <label for="message">Message</label>
-						  <br>
-						  <textarea id="message" name="message"></textarea>
-						  <br>
-						  <input type="submit" value="Submit" class="enter">
+  <meta charset="UTF-8" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
 
-					</form>
-			</section>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://bootswatch.com/3/flatly/bootstrap.min.css">
 
-			<!-- Sidebar--> 
-			<section id="right">
-				<h2 id="big">Connect with Me</h2>
-				<hr>
-				<nav id="connect-me">
-					<ul>
-						<!-- GitHub--> 
-						<li><a href="https://github.com/chrisbond19">
-				  		<img src="assets/images/github.png" alt="GitHub" class="con">
-						</a></li>
-						<!-- LinkedIn--> 
-						<li><a href="https://www.linkedin.com/in/christopher-hutchinson-731963151">
-				  		<img src="assets/images/linkedin.png" alt="LinkedIn" class="con">
-						</a></li>
-						<!-- Stackoverflow--> 
-						<li><a href="https://stackoverflow.com/users/8841297/chrisbond19">
-				  		<img src="assets/images/stackoverflow.png" alt="Stackoverflow" class="con">
-						</a></li>
-					</ul>
-				</nav>
-			</section>
-		</div>
-	<!--END OF MAIN CONTENT-->
+  <style type="text/css">
+  #bHeading{
+    font-size: 24px;
+    }
+    #smallcontact{
+      width: 45px;
+      height: 45px;
+      margin: 0 auto;
+      display: inline;
+    }
+    li{
+      display: inline;
+      list-style: none;
+    }
+    #connectme{
+      text-align: center;
+      font-size: 20px;
+    }
+    #me{
+      width: 50%; 
+      height: 50%;
+      float: left;
+      padding: 20px 20px;
+    }
+    .footers {
+      position: fixed;
+      bottom: 0;
+      background-color: #2C3D4F;
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      height: 5%;
+      width: 100%;
+      padding: 1%;
+    }
+  </style>
 
-	<!-- FOOTER--> 
-		<div class="footer">
- 				<small>&copy; Copyright 2017 Chris Hutchinson</small>
-		</div>
-		<!--END OF FOOTER-->
-	</body>
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id="bHeading" class="navbar-brand" href="index.html">Chris Hutchinson</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+    	<div class="jumbotron">
+    		<h2>Contact Me</h2>
+<br>
+<form class="form-horizontal">
+  <fieldset>
+
+    <div class="form-group">
+      <label for="inputEmail" class="col-lg-2 control-label">Name</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="inputEmail" placeholder="Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="nputEmail" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="nputEmail" placeholder="example@gmail.com">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="textArea" class="col-lg-2 control-label">Message</label>
+      <div class="col-lg-10">
+        <textarea class="form-control" rows="3" id="textArea"></textarea>    
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+</div>
+        <div class="row">
+          <div class="col-md-4"> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+      <div class="panel panel-primary">
+      <div class="panel-heading">
+      <h2 id="connectme" class="panel-title">Connect with Me</h2>
+    </div>
+    <div class="panel-body">
+      <ul>
+              <!-- GitHub--> 
+              <li><a href="https://github.com/chrisbond19">
+                <img src="assets/images/github.png" alt="GitHub" id="smallcontact" class="img-responsive">
+              </a></li>
+              <!-- LinkedIn--> 
+              <li><a href="https://www.linkedin.com/in/christopher-hutchinson-731963151">
+                <img src="assets/images/linkedin.png" alt="LinkedIn" id="smallcontact" class="img-responsive">
+              </a></li>
+              <!-- Stackoverflow--> 
+              <li><a href="https://stackoverflow.com/users/8841297/chrisbond19">
+                <img src="assets/images/stackoverflow.png" alt="Stackoverflow" id="smallcontact" class="img-responsive">
+              </a></li>
+            </ul>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+<!--Footer-->
+
+<footer class="container-fluid bg-4 text-center footers">
+  <p>&copy; Copyright 2017 Chris Hutchinson</p> 
+</footer>
+ 
+  <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
